@@ -1,0 +1,146 @@
+/* Global Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20200%20200%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22grad1%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23b1e4d8%3Bstop-opacity%3A1%22%2F%3E%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23ddeaf1%3Bstop-opacity%3A1%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22url%28%23grad1%29%22%2F%3E%3Ccircle%20cx%3D%22110%22%20cy%3D%22100%22%20r%3D%2215%22%20fill%3D%22%23a6c9d6%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M20%2C140%20C30%2C130%20C50%2C100%20100%2C90%20C150%2C80%20170%2C120%20200%2C150%22%20fill%3D%22%23c1d3e0%22%20opacity%3D%22.5%22%2F%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%22150%22%20r%3D%2215%22%20fill%3D%22%23d8eaf3%22%20opacity%3D%22.4%22%2F%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22110%22%20r%3D%225%22%20fill%3D%22%23aad2d6%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M40%2C160%20L60%2C130%20L80%2C140%20C100%2C150%20120%2C140%20L140%2C130%20L160%2C160%22%20fill%3D%22%23c3d7eb%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M30%2C120%20C60%2C90%20C70%2C100%2090%2C110%20C110%2C120%20130%2C110%20C150%2C100%20C160%2C90%20L180%2C110%20C160%2C130%20C140%2C120%20C130%2C130%20C110%2C140%20C90%2C150%20L70%2C140%20C60%2C130%20C40%2C140%20C30%2C130%22%20fill%3D%22%23a1b4c6%22%20opacity%3D%22.4%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22100%22%20r%3D%223%22%20fill%3D%22%23e3f3f6%22%20opacity%3D%22.5%22%2F%3E%3Ccircle%20cx%3D%22160%22%20cy%3D%22130%22%20r%3D%2215%22%20fill%3D%22%23b8d8f2%22%20opacity%3D%22.3%22%2F%3E%3Ccircle%20cx%3D%22150%22%20cy%3D%22100%22%20r%3D%2215%22%20fill%3D%22%23c2d6eb%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M50%2C80%20L30%2C90%20L60%2C100%20C70%2C110%20L90%2C80%20C100%2C60%20C120%2C70%20L140%2C80%20C150%2C90%20L160%2C100%20C180%2C110%20L170%2C120%22%20fill%3D%22%23a3c1d6%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M50%2C140%20C40%2C150%2020%2C170%20100%2C160%20L120%2C150%20C140%2C140%20L160%2C150%20L180%2C160%20C190%2C170%22%20fill%3D%22%23e6f7fd%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M50%2C50%20L70%2C30%20C90%2C50%20L110%2C30%20L130%2C50%20L150%2C30%22%20fill%3D%22%23d9e7f5%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M140%2C40%20C160%2C20%20C170%2C50%20C150%2C70%20C130%2C80%20L140%2C60%20C120%2C50%20C140%2C40%20Z%22%20fill%3D%22%23cfe8f4%22%20opacity%3D%22.6%22%2F%3E%3C/svg%3E');
+    background-size: cover;
+    color: #333;
+    background-position: center;
+
+/* Header Styling */
+h1 {
+    color: #2c3e50;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+/* Header Hover Effect */
+h1:hover {
+    color: #27ae60;
+}
+
+/* Story Text Box */
+#storyText {
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    max-width: 85%;
+    text-align: left;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+    font-weight: 400;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Story Text Hover Effect */
+#storyText:hover {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Choice Button Styling */
+#choices button {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Choice Button Hover Effect */
+#choices button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Choice Button Active Effects */
+#choices button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Image Styling */
+#storyImage {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 4px solid #ddd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    object-fit: cover; /* Ensures images cover the given area */
+}
+
+/* Image Hover Effect */
+#storyImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Restart Button Styling */
+#restartBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Restart Button Hover Effect */
+#restartBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Restart Button Active Effect */
+#restartBtn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
