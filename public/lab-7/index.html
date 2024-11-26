@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mad Libs Generator</h1>
+  <form action="/submit" method="POST">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" name="noun" required><br><br>
+
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" name="adjective" required><br><br>
+
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" name="verb" required><br><br>
+
+    <label for="pluralNoun">Plural Noun:</label>
+    <input type="text" id="pluralNoun" name="pluralNoun" required><br><br>
+
+    <label for="place">Place:</label>
+    <input type="text" id="place" name="place" required><br><br>
+
+  <button type="submit">Generate Mad Lib</button>
+</form>
+
+</body>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <p>In this lab I engineered a simple web application with the help of Node.js and Express and created a Mad Libs story. For example, the application has input form which allows a user to type a noun, adjective, verb, plural noun, and place. When done, the app creates a story using the inputs the user keyed in. The form data is processed with a POST route and there’s verification to ensure that all fields in the form are filled before the story creation.
+
+It can also operate static files like an array of CSS file for styling and has individual error detection to inform the users in case they ignore some field. I have also included one more route /do_a_random which does a Math.random and returns a random number between 0 and 1 always converted to an integer by invoking Math.floor on the value.
+
+The form and the result page are designed with CSS in plain manner which does not confuse a user. For logging the requests I used Morgan and for handling form data I used middleware from Express. In this lab I was able to learn how to create full stack web applications using Node.js, process form data and serve static files.</p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</html>
