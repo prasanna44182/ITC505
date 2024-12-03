@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()" method="post">
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <p>This webpage uses three key files: HTML, CSS, and JavaScript.
+
+The HTML file (index.html) provides the basic structure of the page. It defines the form elements like input fields and the submit button, allowing users to enter their information.
+
+The CSS file (style.css) is responsible for the page's design. It styles the form, centers it on the page, and makes the layout visually appealing by controlling colors, fonts, and positioning.
+
+The JavaScript file (script.js) adds functionality by validating the form inputs. It checks if all fields are filled out correctly, if the email format is valid, and if the passwords match before allowing the form to be submitted.
+
+Together, these files ensure that the page is structured, visually attractive, and functions properly by validating user input.</p>
+    </div>
+
+    <!-- Footer Section with Addendum for Important Elements -->
+    <footer>
+  
+    </footer>
+</body>
+</html>
