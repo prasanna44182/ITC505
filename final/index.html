@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Lights Out Game by Prasanna Kumar</h2>
+  <div class="layout">
+    <div id="instructions">
+      <h3>Game Instructions</h3>
+      <p>The goal of the game is to turn off all the lights (black tiles) and reveal the image below. Each click toggles the state of the tile clicked and its adjacent tiles (above, below, left, right).</p>
+    </div>
+    <div id="game-area">
+      <div id="info">
+        <button id="newGame">New Game</button>
+        <p>Target: Turn on all lights <span id="target">0</span></p>
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Time: <span id="time">0:00</span></p>
+      </div>
+      <div id="container"></div>
+    </div>
+    <div id="how-to-play">
+      <h3>How to Play</h3>
+      <ul>
+        <li>Click on a black tile to toggle it and adjacent tiles.</li>
+        <li>Keep toggling until all tiles are flipped and the image is fully revealed.</li>
+        <li>Check your moves and time to improve your gameplay.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Last Updated Section -->
+  <div id="last-updated">
+    <p>Last updated: <span id="lastModified"></span></p>
+    <footer>
+<script type="text/javascript">
+  var x = document.lastModified;
+  document.getElementById('lastModified').textContent = x;
+</script>
+
+  </div>
+
+  <!-- Adendum Section -->
+  <div id="adendum">
+    <h3>Adendum</h3>
+    <p>
+      This project is about making the Lights Out game. I use HTML, CSS, and JavaScript to make it. First, I make the game with grid and black blocks. User click on block, and it change color or disappear. The target is to make all blocks disappear and show background image.
+    </p>
+    <p>
+      I also add features like timer, moves counter, and target count. Timer show how much time user take to finish. Moves show how many clicks user did. Target show how many blocks left to win.
+    </p>
+    <p>
+      For the design, I make page look nice. Background of page is colorful image with balloons. Game box has different image inside it, and blocks cover it like black screen. When user click block, the black block disappear and show image below. This look very nice and fun. I also make hover effect on blocks, so when user move mouse over block, it glow and look better.
+    </p>
+    <p>
+      The info section has "New Game" button. It also show Target, Moves, and Time in simple design. I style this section with white background, rounded corners, and shadow. It look like card. Button also have hover effect, so it change size and color when mouse go over it.
+    </p>
+    <p>
+      I face some problem in aligning the grid and showing background image. Sometimes blocks cover the image, and it not look good. I fix it by making blocks transparent when clicked. I also have problem with making page background different from game background, but I solve it using separate CSS.
+    </p>
+    <p>
+      This project teach me about HTML grid, CSS styles, and JavaScript logic. I learn how to make timer and counter also. It was fun and useful project.
+    </p>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
