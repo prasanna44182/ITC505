@@ -6,6 +6,7 @@
   <title>Lights Out Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h2>Lights Out Game by Prasanna Kumar</h2>
   <div class="layout">
@@ -15,12 +16,13 @@
     </div>
     <div id="game-area">
       <div id="info">
-        <button id="newGame">New Game</button>
-        <p>Player: <span id="playerName"></span></p>
-        <p>Target: Turn on all lights <span id="target">0</span></p>
-        <p>Moves: <span id="moves">0</span></p>
-        <p>Time: <span id="time">0:00</span></p>
-      </div>
+  <button id="newGame">New Game</button>
+  <p>Player: <span id="playerName"></span></p>
+  <p>Target: Turn on all lights <span id="target">0</span></p>
+  <p>Moves: <span id="moves">0</span></p>
+  <p>Time: <span id="time">0:00</span></p>
+</div>
+
       <div id="container"></div>
     </div>
     <div id="how-to-play">
@@ -36,12 +38,6 @@
   <!-- Last Updated Section -->
   <div id="last-updated">
     <p>Last updated: <span id="lastModified"></span></p>
-    <footer>
-<script type="text/javascript">
-  var x = document.lastModified;
-  document.getElementById('lastModified').textContent = x;
-</script>
-
   </div>
 
   <!-- Adendum Section -->
@@ -66,7 +62,19 @@
       This project teach me about HTML grid, CSS styles, and JavaScript logic. I learn how to make timer and counter also. It was fun and useful project.
     </p>
   </div>
-  <script src="script.js"></script>
 
+  <footer>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const lastModifiedElement = document.getElementById('lastModified');
+        if (lastModifiedElement) {
+          const lastModified = new Date(document.lastModified);
+          lastModifiedElement.textContent = lastModified.toLocaleString();
+        }
+      });
+    </script>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
