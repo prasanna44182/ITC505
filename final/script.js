@@ -22,18 +22,17 @@ class LightsOut {
     this.time = 0;
     this.updateUI();
     this.startTimer();
-    this.askPlayerName(); // Prompt for player name
+    this.askPlayerName();
   }
 
   askPlayerName() {
-    // Ask for the player's name if not already provided
     if (!this.playerName) {
       this.playerName = window.prompt('Enter your name to start the game:', 'Player');
       if (!this.playerName) {
         this.playerName = 'Player'; // Default name if no input
       }
     }
-    document.getElementById('playerName').textContent = this.playerName; // Display player name in the UI
+    document.getElementById('playerName').textContent = this.playerName;
   }
 
   renderGrid() {
@@ -69,9 +68,7 @@ class LightsOut {
   toggle(row, col) {
     if (row >= 0 && row < this.size && col >= 0 && col < this.size) {
       this.grid[row][col] = !this.grid[row][col];
-      const cell = this.container.querySelector(
-        `[data-row="${row}"][data-col="${col}"]`
-      );
+      const cell = this.container.querySelector(`[data-row="${row}"][data-col="${col}"]`);
       cell.classList.toggle('flip');
     }
   }
@@ -107,15 +104,38 @@ class LightsOut {
 
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('container');
+  
+  if (!container) {
+    console.error('Game container not found.');
+    return;
+  }
+
   const game = new LightsOut(container, 5);
 
-  document.getElementById('newGame').addEventListener('click', () => {
-    game.init();
+  const newGameButton = document.getElementById('newGame');
+  
+  if (!newGameButton) {
+    console.error('New Game button not found.');
+    return;
+  }
+
+  // Debugging: Log game and button instances
+  console.log('Game instance:', game);
+  console.log('New Game button:', newGameButton);
+
+  newGameButton.addEventListener('click', () => {
+    console.log('New Game button clicked');
+    game.init(); // Reinitialize the game
   });
 
-  // Correctly update the "Last Modified" section
   const lastModifiedElement = document.getElementById('lastModified');
+  
   if (lastModifiedElement) {
-    lastModifiedElement.textContent = document.lastModified;
+    const lastModified = new Date(document.lastModified);
+    lastModifiedElement.textContent = lastModified.toLocaleString();
+  } else {
+    console.warn('Last modified element not found.');
   }
 });
+
+
